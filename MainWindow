@@ -1,0 +1,28 @@
+#include<fstream>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+setlocale(0,"");
+
+int a;
+
+string input;
+
+ofstream fout ("example.txt");
+
+cin >> input;
+
+fout << input;
+
+string output; 
+
+ifstream fin("example.txt"); 
+
+fin >> output;
+
+cout << output;
+
+
+}
